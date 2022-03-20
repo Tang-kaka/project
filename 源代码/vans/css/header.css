@@ -1,0 +1,332 @@
+/*==========版心=======*/
+.headercenter{
+    width: 1300px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+/*========头部=======*/
+body{
+    min-height: 1000px;
+    background-color: white;
+}
+#header .top{
+    width: 1300px;
+    height: 48px;
+    /* float: right;
+    margin-buttom: 21px; */
+    line-height: 48px;
+    margin-bottom: 21px;
+    
+}
+#header .header{
+    margin-right: 20px;
+    float: right;
+}
+#header  .header .iconfont{
+    color: #9b9b9b;
+    font-size: 14px;
+}
+#header span a{
+    color: #9b9b9b;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+/*========nav=======*/
+#nav{
+        margin-top: -10px;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 9999;  
+}
+
+#nav .nav{
+        width: 100%;
+        height: 60px;  
+        /* line-height: 60px; */
+}
+/* #nav .headercenter .nav .img{
+    position: relative;
+} */
+#nav .headercenter .nav img{
+   width: 156px;
+    height: 130px;
+    /* height: 36px; */
+    /* position: relative;
+    left: 0;
+    top: -23px; */
+    margin-top: -57px;   
+}
+#nav .headercenter ul{
+    margin-left: 170px;
+    margin-top: -53px;
+}
+#nav .headercenter ul li{
+    float: left;
+    padding: 0 7px;
+    color: #9b9b9b;
+    text-align: center;
+    
+}
+#nav .headercenter ul li a{
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+}
+#nav .headercenter ul li a .iconfont{
+    font-size: 8px;
+    padding: 0 5px;
+}
+#nav .headercenter .input1{
+    float: right;
+    width: 180px;
+    height: 28px;
+    border: 1px solid #9b9b9b;
+    margin-top: -8px;
+    
+}
+#nav .headercenter .input1 input{
+    width: 146px;
+    height: 28px;
+}
+#nav .headercenter .input1 span{
+    float: right;
+    display: block;
+    width: 34px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    color: #9b9b9b;
+}
+/*二级菜单区域*/
+#nav ul.secondlist{
+    position: absolute;
+    /* display: none; */
+    width: 1440px;
+    /* min-height: 200px; */
+    top: 43px;
+}
+#nav ul .secondlist .one{
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin: 0 22px;
+    display: none;
+}
+#nav ul .secondlist .three{
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    display: none;
+    margin: 0 8px;
+}
+#nav ul .secondlist .four{
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    display: none;
+    margin: 0 8px;
+}
+#nav ul .secondlist .five{
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    display: none;
+    margin: 0 8px;
+}
+#nav ul .secondlist .seven{
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    display: none;
+    margin: 0 50px;
+}
+#nav ul .secondlist .eight{
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 15px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    display: none;
+    margin: 0 22px;
+}
+/*二级菜单的盒子*/
+/*1.关于vans部分*/
+#nav .headercenter .secondlist .list{
+    width: 1440px;
+    min-height: 200px;
+    background-color: black;
+    position: absolute;  
+    margin-left: -245px;
+    /* left: 0; */
+    display: none;
+}
+#nav .list div{
+    float: left;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+#nav .list dt{
+    color: white;
+    margin-bottom: 15px;
+
+}
+#nav .list dd{
+    color: #589bc6;
+    margin-bottom: 15px;
+}
+/*2.男子部分*/
+#nav .headercenter .secondlist .list1{
+    width: 1440px;
+    min-height: 200px;
+    background-color: black;
+    position: absolute;  
+    margin: 0 -468px;
+    display: none;
+}
+#nav .list1 div{
+    float: left;
+    margin-left:250px;
+    margin-top: 50px;
+}
+#nav .list1 dt{
+    color: white;
+    margin-bottom: 15px;
+
+}
+#nav .list1 dd{
+    color: #589bc6;
+    margin-bottom: 15px;
+}
+/*3.女子部分*/
+#nav .list2{
+    width: 1440px;
+    min-height: 200px;
+    background-color: black;
+    position: absolute;  
+    margin: 0 -542px;
+    display: none;
+}
+#nav .list2 div{
+    float: left;
+    margin-left:250px;
+    margin-top: 50px;
+}
+#nav .list2 dt{
+    color: white;
+    margin-bottom: 15px;
+
+}
+#nav .list2 dd{
+    color: #589bc6;
+    margin-bottom: 15px;
+}
+/*4.儿童部分*/
+#nav .list3{
+    width: 1440px;
+    min-height: 200px;
+    background-color: black;
+    position: absolute;  
+    margin: 0 -619px;
+    display: none;
+}
+#nav .list3 div{
+    float: left;
+    margin-left:250px;
+    margin-top: 50px;
+}
+#nav .list3 dt{
+    color: white;
+    margin-bottom: 15px;
+
+}
+#nav .list3 dd{
+    color: #589bc6;
+    margin-bottom: 15px;
+}
+/*5.专辑部分*/
+#nav .list4{
+    width: 1440px;
+    min-height: 200px;
+    background-color: black;
+    position: absolute;  
+    margin: 0 -769px;
+    display: none;
+}
+#nav .list4 div{
+    float: left;
+    margin-left:250px;
+    margin-top: 50px;
+}
+#nav .list4 dt{
+    color: white;
+    margin-bottom: 15px;
+
+}
+#nav .list4 dd{
+    color: #589bc6;
+    margin-bottom: 15px;
+}
+/*6.更多产品*/
+#nav .list5{
+    width: 1440px;
+    min-height: 200px;
+    background-color: black;
+    position: absolute;  
+    margin: 0 -907px;
+    display: none;
+}
+#nav .list5 div{
+    float: left;
+    margin-left:250px;
+    margin-top: 50px;
+}
+#nav .list5 dt{
+    color: white;
+    margin-bottom: 15px;
+
+}
+#nav .list5 dd{
+    color: #589bc6;
+    margin-bottom: 15px;
+}
+/*============================================================*/
+/*固定定位区域*/
+#fixed{
+ position: fixed;
+ right: 0px;
+ bottom: 50px;
+ z-index: 9999;
+}
+
+#fixed div img{
+    width: 56px;
+    height: 56px;
+}
+#fixed .last{
+    display: none;
+}
+/* #fixed div :nth-child(2){
+    background-color: #000;
+} */
+
+
+

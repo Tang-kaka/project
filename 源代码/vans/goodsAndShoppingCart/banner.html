@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style>
+		.no-border {
+			border: none;
+			width: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 轮播图列表 -->
+	<div class="banner-list">
+		<table id="banner-table">
+
+		</table>
+		注：如果要修改数据，直接在页面上点击需要修改的文字就行，但是必须要点击“修改”按钮才能修改成功
+	</div>
+	<hr />
+	<div class="banner-add">
+		编号：<input id="id" type="text" name="id" placeholder="编号不要重复" /><br />
+		图片地址：<input id="img" type="text" name="img" /><br />
+		超链：<input id="url" type="text" name="url" /><br />
+		<input type="button" value="添加" onclick="addBanner()" />
+	</div>
+</body>
+
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="./js/tools.js"></script>
+<script>
+
+
+
+	$(function () {
+		getData();
+	});
+
+	function getData() {
+		$.get("bannerGet.php", function (data) {
+			let htmlStr = `
+			<tr>
+				<td>编号</td>
+				<td>图片地址</td>
+				<td>超链</td>
+				<td>操作</td>
+			</tr>			
+			`;
+			data.forEach(function (item, idx) {
+				htmlStr += `<tr>
+				<td>${item.id}</td>
+				<td>
+					<input class="no-border" type="text" value="${item.img}" >
+				</td>
+				<td>
+					<input class="no-border" type="text" value="${item.url}" >
+				</td>
+				<td>
+					<input  type="button" value="删除" onclick="deleteImg('${item.id}')" >
+					<input  type="button" value="修改" onclick="updateImg(${idx},'${item.id}')"  >
+				</td>
+			</tr>`;
+			});
+			$("#banner-table").html(htmlStr);
+		}, "json");
+	}
+
+	function addBanner() {
+		let objs = {
+			"id": "编号", "img": "图片地址", "url": "超链" }
+		if(!preDo(objs)){
+			return false;
+		}
+
+		$.post(
+			"bannerAdd.php",
+			{
+				id: $("#id").val(),
+				img: $("#img").val(),
+				url: $("#url").val()
+			},
+			function (result) {
+				// if(result=="1"){
+					getData();
+				// }else{
+				// 	alert("添加失败");
+				// }				
+			}
+		);
+	}
+
+	function deleteImg(id) {
+		if (confirm("亲，真的要删除吗？")) {
+			$.get("bannerDel.php", { id }, function (data) {
+				console.log("data", data);
+				// if(data=="success"){
+				console.log("getData");
+				getData();
+				// }
+			});
+		}
+	}
+
+	function updateImg(idx, id) {
+		let $td = $("#banner-table tr:nth-child(" + (idx + 2) + ")").children();
+		let img = $td.eq(1).children().val();
+		let url = $td.eq(2).children().val();
+		$.post("bannerUpdate.php", { id, img, url }, function () {
+			alert("修改成功！");
+			// getData();
+		});
+	}
+
+
+</script>

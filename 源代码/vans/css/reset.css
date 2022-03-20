@@ -1,0 +1,44 @@
+
+/* 清除所有标签的内外间距 */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 清除无序和有序前面的默认符号 */
+ol,ul{
+    list-style: none;
+}
+/* 取消默认自带的下滑 */
+a,u{
+    text-decoration: none;
+    color: #000;
+}
+/* 取消标题自带加粗  让字号统一都为16px */
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    font-size: 16px;
+}
+/* 让加粗标签回归正常 */
+b,strong{
+    font-weight: 400;
+}
+/* 让倾斜标签回归正常 */
+i,em{
+    font-style: normal;
+}
+/*   输入框标签 */
+input{
+    border: none;
+    /* 清除轮廓线（就是点击之后哪个蓝色线条） */
+    outline: none;
+}
+/* 万能清除法 */
+.clear_fix::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}

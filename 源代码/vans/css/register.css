@@ -1,0 +1,103 @@
+/* ==========部分地区发货公告========== */
+ #some{
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+/*=========login区域=========*/
+#main{
+    width: 100%;
+    min-height: 620px;
+    background-color: #f1f2ed;
+    overflow: hidden;
+}
+.login{
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    /* float: left; */
+}
+.login .img{
+    float: left;
+}
+.login img{
+    width: 500px;
+}
+.loginright{
+    float: left;
+    width: 500px;
+    height:410px;
+}
+.loginright .box{
+    width: 336px;
+    height: 410px;
+    margin-left: 80px;
+    font-size: 13px;
+}
+.loginright .box h2{
+    float: left;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 17px;
+    margin-bottom: 20px;
+} 
+ 
+.loginright .box  li:nth-child(1) input{
+    width: 305px;
+    height: 34px;
+    background-color: #fff;
+    padding: 0 15px;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 20px;
+} 
+.loginright .box  li .ting{
+    font-size: 12px;
+    color: red;
+}
+.loginright .box  li:nth-child(2) input{
+    width: 40%;
+    height: 34px;
+    background-color: #fff;
+    padding: 0 15px;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 20px;
+} 
+.loginright .box  li:nth-child(2) span{
+    width: 25%;
+    height: 34px;
+    /* color: #d2d2d2; */
+    font-size: 12px;
+    margin-left: 10px;
+}
+.loginright .box  li:nth-child(3) input{
+    width: 40%;
+    height: 34px;
+    background-color: #fff;
+    padding: 0 15px;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 20px;
+} 
+.loginright .box  li:nth-child(3) button{
+    width: 46%;
+    height: 34px;
+    background-color: #000;
+    color: white;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    border: none;
+    margin-left: 10px;
+} 
+.loginright .box  li:nth-child(4) button{
+    width: 100%;
+    height: 34px;
+    background-color: #c9192e;
+    color: white;
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 20px;
+    border: none;
+} 

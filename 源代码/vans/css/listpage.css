@@ -1,0 +1,212 @@
+/* ==========部分地区发货公告========== */
+.center{
+    width: 1440px;
+    margin: 0 auto;
+}
+ #some{
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+/*=========listpage区域=========*/
+#main{
+    width: 100%;
+    min-height: 1000px;
+    background-color: #f1f2ed;
+    overflow: hidden;
+}
+/*========排序=========*/
+#main .center .first{
+    height: 88px;
+    width: 100%;
+    background: url(https://img3.vans.com.cn/themes/Vans/images/bw.png) repeat-x left bottom;
+}
+#main .center .first .man{
+    height: 88px;
+    line-height: 88px;
+    float: left;
+}
+#main .center .first .man span{
+    color: #666;
+    width: 136px;
+    height: 30px;
+    font-size: 16px;
+    padding: 0 34px 0 30px;
+    font-weight: 700;
+}
+#main .center .first .sort{
+    width: 240px;
+    line-height: 46px;
+    line-height: 46px;
+    margin-top: 20px;
+    font-weight: 700;
+    float: right;
+    color: #666;
+    border: 1px solid #666;
+    background-color: white;
+}
+#main .center .first .sort li{
+    padding-left: 15px;
+}
+#main .center .first .sort li span{
+    float: right;
+    padding-right: 15px;
+}
+/*=====banner区域=======*/
+#banner .center a img{
+    width: 100%;
+    margin-top: 20px;
+}
+/*==========list=========*/
+#main .center .list{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px dashed #666;
+    overflow: hidden;
+}
+#main .center .list .box1{
+    width: 410px;
+    height: 272px;
+    float: left;
+    background-color: white;
+    padding:0 20px;
+}
+#main .center .list .box1 li{
+    width: 406px;
+    height: 66px;
+    line-height: 66px;
+    font-weight: 700;
+    border-bottom: 1px dashed #666;
+}
+#main .center .list .box1 li span{
+    float: right;
+}
+/*======right======*/
+#main .center .list .box2{
+    float: right;
+}
+#main .center .list .box2 ul{
+    width: 960px;
+}
+#main .center .list .box2 ul li{
+    float: right;
+    width: 310px;
+    height: 455px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+#main .list .box2 li img{
+    width: 100%;
+}
+#main .list .box2 li .price{
+    width: 100%;
+    height: 76px;
+    margin-top: 10px;
+    text-align: center;
+}
+#main .list .box2 li .price h3{
+    width: 100%;
+    height: 43px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#main .list .box2 li .price div{
+    font-weight: 700;
+}
+/*====定制喜欢鞋型======*/
+#main .like h2{
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+#main .like .bigbox{
+    width: 1304px;
+    height: 214px;
+    margin: 0 auto 100px auto;
+    background: url(https://img2.vans.com.cn/themes/Vans/images/plp/white-bg.jpg) no-repeat center center;
+}
+#main .like .bigbox ul{
+    display: inline-block;
+    padding: 40px 0 52px;
+}
+#main .like .bigbox ul li{
+    float: left;
+    margin:0 17px;
+    padding: 0 5px;
+}
+#main .like .bigbox ul li img{
+    margin-bottom: 14px;
+}
+#main .like .bigbox ul li p{
+    height: 20px;
+    width: 142px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700px;
+    line-height: 20px;
+}
+/*=======猜你喜欢区域=======*/   
+#suppose{
+    width: 100%;
+    height: 612px;
+    padding: 0 0 10px;
+}
+#suppose  h2{
+    width: 100%;
+    height: 102px;
+    line-height: 102px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+#suppose .bigbox{
+    width: 1040px;
+    height: 335px;
+    margin: 0 auto;
+    padding-top: 50px;
+    overflow: hidden;
+}
+#suppose .bigbox .smallbox1{
+    width: 245px;
+    height: 245px;
+    margin-right: 20px;
+}
+#suppose .bigbox .smallbox1 img{
+    width: 100%;
+}
+#suppose .bigbox .smallbox2 h6{
+    width: 245px;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    font-size: 16px;
+    font-weight: 700
+}
+#suppose .bigbox .smallbox2 span{
+    display: block;
+    width: 245px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color:#ca182e;
+}
+#suppose .bigbox .one{
+    float: left;
+}
+#suppose .two{
+    width: 162px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;
+   
+    margin: 30px auto;
+}
+#suppose .two a{
+ font-size: 16px;
+    color: white;
+}

@@ -1,0 +1,300 @@
+/* ==========部分地区发货公告========== */
+.center{
+    width: 1440px;
+    margin: 0 auto;
+}
+ #some{
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+/*=========listpage区域=========*/
+#main{
+    width: 100%;
+    min-height: 1000px;
+    background-color: #f1f2ed;
+    overflow: hidden;
+}
+/*========放大镜区域=========*/
+#main .center .first{
+    width: 1440px;
+    height: 46px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    /* padding: 0 0 15px; */
+    border-bottom: 1px solid #666;
+}
+#main .center .first span{
+    color: #589bc6;
+    font-size: 16px;
+}
+ #box {
+            width: 740px;
+            height: 740px;
+            position: relative;
+            float: left;
+            margin-right: 30px;
+
+        }
+
+        #smallbox {
+            width: 740px;
+            height: 740px;
+        }
+        #smallbox img{
+            width: 100%;
+        }
+
+        #bigbox {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 750px;
+            top: 0px;
+            overflow: hidden;
+            font-size: 0;
+            display: none;
+        }
+
+        #bigbox img {
+            /* border: 1px solid goldenrod; */
+            width: 1500px;
+            position: absolute;
+        }
+
+        #mask {
+            width: 254px;
+            height: 254px;
+            background-color: #b3d5ff;
+            opacity: 0.3;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+            cursor: move;
+        }
+
+        #tab {
+            position: absolute;
+            bottom: -100px;
+            left: 0px;
+            height: 80px;
+        }
+
+        #tab .tab1 {
+            margin-right: 20px;
+            float: left;
+            width: 80px;
+            height: 80px;
+        }
+        #tab .tab1 img{
+            width: 100%;
+        }
+        #tab .current {
+            border: 1px solid red;
+        }
+/*=======放大镜右侧详细信息=========*/
+#main .title{
+    float: left;
+}
+#main .title h2{
+    width: 670px;
+    height: 46px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    line-height: 46px;
+    font-weight: 700;
+}
+#main .title .one{
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+}
+#main .title .one li{
+    width: 670px;
+    height: 30px;
+    line-height: 30px;
+    color: #c8192e;
+    font-size: 18px;
+    font-weight: 700;
+}
+#main .title  .one li em{
+    background-color: #c8192e;
+    color: #fff;
+    font-size: 16px;
+}
+#main .title .one li span{
+color: #c8192e;
+    font-size: 16px;
+}
+#main .title .two{
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+}
+#main .title .two li{
+    width: 670px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#main .title .two img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #c8192e;
+}
+#main .title .three{
+    border-bottom: 1px solid #666;
+    padding-bottom: 50px;
+}
+#main .title .three li{
+    width: 670px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#main .title .three button{
+    min-width: 40px;
+    min-height: 30px;
+    border-color: #bebebb9d;
+    background-color: #f1f2ed;
+    font-weight: 700;
+}
+#main .title .four{
+    margin-bottom: 20px;
+    padding: 10px 0 10px;
+    border-bottom: 1px solid #666;
+}
+#main .title .four li{
+    width: 670px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 16px;
+    font-weight: 700;
+}
+#main .title .four li button{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: none;
+}
+#main .title .four li input{
+    text-align: center;
+}
+#main .title .five{
+    margin-bottom: 20px;
+        padding: 10px 0 20px;
+    border-bottom: 1px solid #666;
+}
+#main .title .five span{
+    display: inline-block;
+    width: 160px;
+    height: 38px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 38px;
+    margin-right: 10px;
+}
+#main .title .five1{
+    background-color: #000;
+}
+#main .title .five2{
+    background-color: #c8192e;
+}
+#main .title .five3 {
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: 60px;
+}
+#main .title .six{
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #666;
+}
+#main .title .six span{
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+/*========图片详情资料======*/
+#twopic{
+    background-color: #f1f2ed;
+    min-height: 4687px;
+}
+#twopic .center .twopic{
+    width: 1440px;
+    min-height: 4687px;
+    padding: 40px 0 25px;
+    margin-bottom: 20px;
+}
+#twopic .center .twopic img{
+    width: 750px;
+    margin:0 345px;
+}
+/*=======猜你喜欢区域=======*/   
+#suppose{
+    width: 100%;
+    height: 612px;
+    padding: 0 0 10px;
+}
+#suppose  h2{
+    width: 100%;
+    height: 102px;
+    line-height: 102px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+#suppose .bigbox{
+    width: 1040px;
+    height: 335px;
+    margin: 0 auto;
+    padding-top: 50px;
+    overflow: hidden;
+}
+#suppose .bigbox .smallbox1{
+    width: 245px;
+    height: 245px;
+    margin-right: 20px;
+}
+#suppose .bigbox .smallbox1 img{
+    width: 100%;
+}
+#suppose .bigbox .smallbox2 h6{
+    width: 245px;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    font-size: 16px;
+    font-weight: 700
+}
+#suppose .bigbox .smallbox2 span{
+    display: block;
+    width: 245px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color:#ca182e;
+}
+#suppose .bigbox .one{
+    float: left;
+}
+#suppose .two{
+    width: 162px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;
+   
+    margin: 30px auto;
+}
+#suppose .two a{
+ font-size: 16px;
+    color: white;
+}

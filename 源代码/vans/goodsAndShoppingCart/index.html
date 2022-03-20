@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#welcomeBox,#loginBox{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		这是NZ-1909班的首页:<br/>
+		<div id="welcomeBox">
+			欢迎您：<span id="usernameSpan"></span>
+			<input id="btnLogout" type="button" value="注销" />
+		</div>
+		<div id="loginBox">
+			请<a href="login.html">登录</a>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"> </script>
+<script src="js/cookieTools.js"></script>
+<script>
+
+function initUI(){
+	let username = getCookie("username");
+	if(username){
+		$("#usernameSpan").html(username);
+		$("#welcomeBox").css({
+			"display":"block"
+		});
+		$("#loginBox").css({
+			"display":"none"
+		});
+	}else{
+		$("#loginBox").css({
+			"display":"block"
+		});
+		$("#welcomeBox").css({
+			"display":"none"
+		});
+	}
+}
+
+$(function(){
+	initUI();
+	$("#btnLogout").click(function(){
+		removeCookie("username");
+		initUI();
+	});
+});
+
+</script>

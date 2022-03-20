@@ -1,0 +1,62 @@
+.center{
+    width: 1440px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+/* ==========部分地区发货公告========== */
+ #some{
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+/*=========cart区域=========*/
+#cart{
+    width: 100%;
+    min-height: 620px;
+    background-color: #f1f2ed;
+    overflow: hidden;
+}
+#cart h1{
+    width: 1440px;
+    height: 42px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 42px;
+    margin-top: 50px;
+}
+#cart .second{
+    width: 1440px;
+    height: 140px;
+    background: url(https://img1.vans.com.cn/themes/Vans/images/bw.png) left 10px no-repeat;  
+    background-repeat: repeat-x;
+    overflow: hidden;
+    text-align: center;
+    line-height: 140px;
+}
+#cart .center .second span{
+    width: 325px;
+    height: 30px;
+    color: #f1f2ed;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+#cart .center table tbody img{
+    width: 100px;
+    height: 100px;
+}
+#cart #tfoot .L,
+#cart #tfoot .L a
+{
+    background-color: #000;
+    color: white;
+}
+#cart #tfoot .R,
+#cart #tfoot .R a
+{
+    background-color: #c8192e;
+    color: white;
+}

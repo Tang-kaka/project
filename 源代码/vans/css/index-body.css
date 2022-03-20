@@ -1,0 +1,318 @@
+/*==========版心=======*/
+ .center1{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* ==========部分地区发货公告========== */
+ #some{
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+/* ==========sticky生日区域========== */
+#sticky{
+    position: sticky;
+    top: 60px;
+    z-index:999;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#sticky .bigimg{
+    height: 130px;
+}
+
+
+#sticky  .arrows{
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+      animation: arrowsmove 0.5s ease-in infinite alternate;
+    -webkit-animation:arrowsmove 0.5s ease-in infinite alternate;
+}
+
+@keyframes arrowsmove{
+  from{}
+  to{
+    transform: translate(0,5px);
+  }
+}
+/*==========banner=======*/
+#banner .swiper1{
+    height: 600px;
+    z-index: 0;
+}
+#swiper-container{
+    --swiper-theme-color: #d2d2d2;
+    --swiper-pagination-color: black;
+}
+/*==========尖货日历区域=======*/
+#day .center1 h3{
+    width: 1240px;
+    height: 60px;
+    background-color: saddlebrown;
+    margin: 60px auto;
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: "Alibaba-PuHuiTi-Bold";
+    background: url(../img/background.jpg) no-repeat 34%,url(../img/background.jpg) no-repeat 66%;
+}
+
+      .swiper2{
+        position: relative;
+        height: 100%;
+
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 1240px;
+        height: 558px;
+        overflow: hidden;
+        margin: 0 auto;
+        
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+      }
+      
+      .my-button-disabled{
+        opacity:0;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        /* height: 100%; */
+        object-fit: cover;
+        transition: all 1s;
+      }
+      .swiper-slide .imgs{
+        overflow: hidden;
+      }
+      .swiper-slide .imgs img:hover{
+        transform: scale(1.2);
+        /* overflow: hidden; */
+      }
+      .swiper-slide .date{
+        width: 100%;
+        height: 22px;
+        font-size: 20px;
+        margin-top: -26px;
+      }
+     .swiper-slide .name{
+       width: 100%;
+       font-weight: 700;
+       font-size: 20px;
+       margin-top: -31px
+     }
+     .swiper-slide .buy{
+       width: 160px;
+       height: 56px;
+       background-color: #000;
+       color: white;
+       margin-bottom: -38px;
+       line-height: 56px;
+     }
+
+     /*=======新品速递区域==========*/
+     #newproduct .center1 div{
+       width: 100%;
+       height: 60px;
+       font-size: 50px;
+       text-align: center;
+       margin-top: 120px;
+       font-weight: 700;
+       margin-bottom: 80px;
+     }
+
+/*=======轮播图3==========*/
+#activity{
+  margin-bottom: 80px;
+}
+#activity .swiper3{
+width: 100%;
+height: 642.67px;
+overflow: hidden;
+}
+#activity .swiper3 .name{
+width: 100%;
+font-weight: 700;
+font-size: 20px;
+margin-top: -50px
+}
+#activity .swiper3 .buy{
+width: 160px;
+height: 56px;
+background-color: #000;
+color: white;
+margin-bottom: -60px;
+line-height: 56px;  
+}
+#activity .swiper3 img{
+  width: 100%;
+}
+    
+/* <!-- =========系列区域========== -->*/
+#xilie ul {
+overflow: hidden;
+}
+#xilie ul li{
+  float: left;
+  width: 25%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#xilie ul li img{
+  width: 100%;
+  transition: all 1s;
+}
+#xilie ul li .imgs{
+  overflow: hidden;
+}
+#xilie ul li img:hover{
+  transform: scale(1.2);
+}
+/* #xilie ul li img:hover span{
+  transform: scale(1.2);
+} */
+#xilie ul li .y{
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top: 30%;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+#xilie ul li .c{
+    position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top: 52%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*<!-- =========最新活动区域========== -->*/
+
+#newactive .center1 .new{
+ width: 100%;
+ height: 130px;
+ text-align: center;
+ line-height: 130px;
+ font-size: 36px;
+ font-weight: 700;
+}
+
+/*<!-- =========新闻资讯区域========== -->*/
+#news .one{
+width: 100%;
+overflow: hidden;
+}
+#news .center1 .one >.box1{
+  height: 527px;
+  width: 49.5%;
+  float: left;  
+}
+#news .center1 .one .y{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 0 10px;
+}
+#news .center1 .one .background:hover{
+  background-color: #000;
+  color:#fff;
+}
+#news .center1 .two .background:hover{
+  background-color: #000;
+  color:#fff;
+}
+
+#news .center1 .one .c{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+#news .center1 .one >.box2{
+  height: 527px;
+  width: 49.5%;
+  float: right;
+  margin-bottom: 30px;
+
+}
+
+
+#news .two{
+width: 100%;
+overflow: hidden;
+}
+#news .center1 .two >.box1{
+  height: 527px;
+  width: 49.5%;
+  float: left;
+  margin-bottom: 30px;
+  
+}
+#news .center1 .two .y{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 0 10px;
+
+}
+#news .center1 .two .c{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+#news .center1 .two >.box2{
+  height: 527px;
+  width: 49.5%;
+  float: right;
+  margin-bottom: 30px;
+}
